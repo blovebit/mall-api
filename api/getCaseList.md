@@ -23,8 +23,9 @@
         "case_list": [
             {
                 "id": "", // 案例id
-                "name": "", // 案例name,
+                "name": "", // 案例name
                 "village": "", // 小区名称
+                "costomer_name": "", // 业主姓名
                 "address": "", // 小区地址
                 "longitude": "", // 经度
                 "latitude": "", // 纬度

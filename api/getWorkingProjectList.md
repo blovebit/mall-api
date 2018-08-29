@@ -22,13 +22,14 @@
     {
         "project_list": [
             {
-                "project_id": id, // 工地id
+                "id": id, // 工地id
                 "name": "", // 工地名
                 "village": "", // 小区名称
                 "costomer_name": "", // 业主姓名
                 "designer": {
                     "id": int, // 设计师id
                     "name": "", // 设计师名字
+                    "avatar": "", // 头像路径 120px左右那个图
                 },
                 "foreman": {
                     "id": int, // 工长id
