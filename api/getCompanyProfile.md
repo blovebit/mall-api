@@ -36,11 +36,18 @@
                 'quality_score': int, // 工程质量总评分
                 'service_score': int, // 服务总评分
                 'total_score': int, // 公司总评分
-                "avatar": "", // 头像路径 120px左右那个图
-                "logo": "", // logo路径 
-                'back_image': {
+                "avatar": {// 头像路径 120px左右那个图
+                    "ori": "", // 原图PC
                     "big": "", // 大图PC
                     "mid": "", // 中图wap  
+                    "sml": "", // 小图wap     
+                },
+                "logo": "", // logo路径 
+                'back_image': {
+                    "ori": "", // 原图PC
+                    "big": "", // 大图PC
+                    "mid": "", // 中图wap  
+                    "sml": "", // 小图wap     
                 },
             },
             // ...
