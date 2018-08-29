@@ -24,6 +24,11 @@
             "fans": int, // 粉丝数
             "new_msn": int, // 新消息数目
             "new_task": int, // 新订单数目
+            
+            // 如果角色为公司添加以下字段
+            
+            "is_deposit": int, // 是否缴纳保证金
+            "is_credit": int, // 是否信用认证
         },
         "message": "获取数据成功!",
         "status": 200

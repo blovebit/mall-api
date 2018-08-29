@@ -36,6 +36,8 @@
   - 08-16 [获取案例详情](./api/getCaseDetail.md): getCaseDetail
   - 08-15 [获取活动列表](./api/getPromotionList.md): getPromotionList
   - 08-26 [获取活动详情](./api/getPromotionDetail.md): getPromotionDetail
+  - 08-26 [获取益币操作日志](./api/getCoinLog.md): getCoinLog
+  - 08-26 [获取公司订单列表](./api/getCompanyMyTaskList.md): getCompanyMyTaskList
 
 ## 数据操作类
 
