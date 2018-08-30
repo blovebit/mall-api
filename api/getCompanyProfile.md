@@ -1,6 +1,6 @@
 # 获取公司简要信息 getCompanyProfile
 
-- [获取公司列表](./getCompanyList.md) 的单个版
+- 获取公司基本信息
 
 ## 参数
 
@@ -20,6 +20,7 @@
                 'project_case': int, // 施工案列数
                 'aftermarket_case': int, // 售后案列数
                 'credit_level': int, // 信用级别
+                'deposit': "", // 保证金
                 'location': {
                     'province': "", // 省
                     'city': "", // 市
