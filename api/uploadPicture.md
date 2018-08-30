@@ -5,7 +5,7 @@
 ## 参数
 
     {
-        'scene': Int, // 图片场景；0：用户发布订单时上传户型图；1：设计师上传稿件时的方案图；
+        'scene': Int, // 图片场景；0：用户发布订单时上传户型图；1：设计师上传稿件时的方案图；2设计师上传原创案例
         'part_id': Int, // 房间id；此id与上传方案关联，户型图不需要
         'iamge_type': String, // 'image' || 'MP4'
         'width': Int, // 图片宽度 px
@@ -13,6 +13,7 @@
         'size': Int, // 图片大小 bye
         'info': String, // 设计师对房间设计的描述
         'process_id': Int, // 进度id；为空时新建进度；
+        'case_id': Int, // 案例id；该id为设计师上传原创案例id；
     }
 
 ## 返回数据

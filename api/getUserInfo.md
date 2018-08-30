@@ -19,7 +19,14 @@
             },
             "level": int, // 用户等级，1，2，3，4，5，6
             "avatar": "", // 头像路径 120px左右那个图
-            "coin": int, // 益币数量
+            "coin": {// 益币相关
+                "total": int, // 益币数量
+                "today_reduce": int, // 益币当日支出数量
+                "today_add": int, // 益币当日收入数量
+                "month_reduce": int, // 益币当月支出数量
+                "month_add": int, // 益币当月收入数量
+            }, 
+           
             "integral": int, // 积分
             "fans": int, // 粉丝数
             "new_msn": int, // 新消息数目

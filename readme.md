@@ -23,7 +23,6 @@
 
   - 08-12 [获取公司列表](./api/getCompanyList.md): getCompanyList
   - 08-12 [获取公司简要信息](./api/getCompanyProfile.md): getCompanyProfile  
-    以上两个接口返回了同样的数据模板，前者为 **列表版**，后者为 **单个版**
   - 08-18 [获取公司资料信息](./api/getCompanyDetail.md): getCompanyDetail
   - 08-23 [公司名模糊查询](./api/getCompanyName.md): getCompanyName
   - 08-16 [查看员工列表](./api/getStaffList.md): getStaffList
