@@ -20,7 +20,6 @@
             "id": int, // 日志id
             "operator_id": "", // 使用者id
             "operator_name": "", // 使用者名称
-             "handle_type": "", // 操作类型：1为充值，2为分配，3为消耗
             "handle_name": int, // 操作名称
             "coin_num": "", // 操作益币数量
             "moeny": "", // 金额(充值金额)
