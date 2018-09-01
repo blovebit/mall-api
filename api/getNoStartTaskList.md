@@ -1,33 +1,20 @@
-# 获取益币操作详情: getCoinLog
+# 获取设计师抢单未上传初稿的订单列表: getCoinLog
 
-- 获取益币所有变更日志  
-  判断用户登陆状态
+- 设计师抢完单，未上传初稿的所有订单，用于关联设计订单与酷家乐做的初稿，设计师与订单关联表订单状态为抢单状态的所有订单
 
 ## 参数
 
     {
-        "page": int, // 当前页
-        "size": int, // 每页数量 默认6条
-        'start_time': //开始时间 时间戳
-        'end_time': //结束时间 时间戳
-        'operator': //操作人名称模糊查询
+        
     }
 
 ## 返回
 
     {
-        "log":{
-            "id": int, // 日志id
-            "operator_id": "", // 使用者id
-            "operator_name": "", // 使用者名称
-            "handle_name": int, // 操作名称
-            "coin_num": "", // 操作益币数量
-            "moeny": "", // 金额(充值金额)
-            "total_coin": "", // 账户当前总益币数
-            "time": "", // 操作时间
-            "pay_sn": "", // 充值编号
-            "serial_number": string, // 流水号
-            "pay_type": int, // 支付方式
+        "taskList":{
+            "id": int, // 订单id
+            "village": "", // 小区名称
+            "estate": "", // 楼盘名称
         },
         "message": "列表获取成功!",
         "status": 200
