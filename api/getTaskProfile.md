@@ -1,8 +1,7 @@
 # 获取订单信息: getTaskProfile
 
 - 订单详情页
-- 08-23 增加返回字段info，客户的备注信息
-- 08-22 增加返回字段step_title，以及设计师的进度字段
+- 09-07 增加返回字段 project_budget，装修预算
 
 ## 参数
 
@@ -19,6 +18,7 @@
             "level": 1, // 订单等级，1，2，3，4，5，6
             "free": true, // 免费订单，false为付费订单
             "budget": 1, // 设计预算
+            "project_budget": 1, // 装修预算
             "unit": "", // 户型 "n室n厅n厨n卫n阳台"
             "area": 1, // 面积
             "style": "", // 风格
