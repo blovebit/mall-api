@@ -16,7 +16,7 @@
         "drafts": [ // 根据查询参数里的process_type，返回每个设计师对应的稿件
             {
                 "step_id": 1, // 步骤id,
-                "3d_url": "", // 3d案例的链接
+                "vr_url": "", // 3d案例的链接
                 "step_title": "", // 当前步骤标题
                 "step_discript": "", // 当前步骤描述
                 "designer": { // 设计师
