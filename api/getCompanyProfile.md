@@ -41,14 +41,14 @@
                     "ori": "", // 原图PC
                     "big": "", // 大图PC
                     "mid": "", // 中图wap  
-                    "sml": "", // 小图wap     
+                    "sml": "", // 小图wap
                 },
-                "logo": "", // logo路径 
+                "logo": "", // logo路径
                 'back_image': {
                     "ori": "", // 原图PC
                     "big": "", // 大图PC
                     "mid": "", // 中图wap  
-                    "sml": "", // 小图wap     
+                    "sml": "", // 小图wap
                 },
             },
             // ...

@@ -31,7 +31,7 @@
   - 08-30 [获取公司简要信息](./api/getCompanyProfile.md): getCompanyProfile  
   - 08-30 [获取公司资料信息](./api/getCompanyDetail.md): getCompanyDetail
   - 08-30 [公司名模糊查询](./api/getCompanyName.md): getCompanyName
-  - 08-30 [查看员工列表](./api/getStaffList.md): getStaffList
+  - 09-08 [查看员工列表](./api/getStaffList.md): getStaffList
   - 08-30 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
   - 08-30 [获取员工详情](./api/getStaffDetail.md): getStaffDetail
   - 09-08 [获取用户信息](./api/getUserInfo.md): getUserInfo
