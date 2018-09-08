@@ -34,7 +34,7 @@
   - 08-30 [查看员工列表](./api/getStaffList.md): getStaffList
   - 08-30 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
   - 08-30 [获取员工详情](./api/getStaffDetail.md): getStaffDetail
-  - 08-30 [获取用户信息](./api/getUserInfo.md): getUserInfo
+  - 09-08 [获取用户信息](./api/getUserInfo.md): getUserInfo
   <!-- - [查看工地列表](./api/getCompanyProjectList.md): getCompanyProjectList -->
   - 08-30 [获取在建工地列表](./api/getWorkingProjectList.md): getWorkingProjectList
   - 08-30 [获取案例列表](./api/getCaseList.md): getCaseList
