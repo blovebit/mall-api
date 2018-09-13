@@ -74,7 +74,7 @@
 
 - 公司管理操作
 
-  - [公司管理员工状态](./api/manageStaff.md): manageStaff
+  - 09-13 [公司管理员工状态](./api/manageStaff.md): manageStaff
   - [员工离职申请](./api/laborTurnover.md): laborTurnover
   - [公司审核员工离职申请](./api/auditLaborTurnover.md): auditLaborTurnover
   - [设计师发起公司变更操作](./api/changeMyCompany.md): changeMyCompany
