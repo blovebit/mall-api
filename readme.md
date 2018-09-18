@@ -1,7 +1,7 @@
 # 益装网api需求
 
 目录条目前的数字表示最后更改的日期，若无，表示至初稿后还未更新  
-**避免浪费效率，建议先实现更新过的文档，没更新过的文档大都不完整或有缺陷**   
+**避免浪费效率，建议先实现更新过的文档，没更新过的文档大都不完整或有缺陷**
 8月30号沟通后，日期统一更改为8-30
 
 ## 页面展示类
@@ -10,7 +10,7 @@
 
 - 获取获取订单信息
 
-  - 08-30 [任务大厅获取订单列表](./api/getTaskList.md): getTaskList
+  - 09-16 [任务大厅获取订单列表](./api/getTaskList.md): getTaskList
   - 08-30 [获取我的订单列表](./api/getMyTaskList.md): getMyTaskList
   - 09-07 [获取订单信息](./api/getTaskProfile.md): getTaskProfile
   - 08-30 [获取公司订单列表](./api/getCompanyMyTaskList.md): getCompanyMyTaskList
