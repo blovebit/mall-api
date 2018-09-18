@@ -1,7 +1,7 @@
 # 任务大厅获取订单列表 getTaskList
 
 - 任务大厅展示
-- 09-18 返回数据 max-need 改为 max_need
+- 09-18 返回数据 max-need 改为 max_need，增加 decoration_budget 装修预算
 - 09-16 返回数据增加用户(业主)名,user_name, 如果未电话号码,需要隐藏中间四位(*号代替)
 - 08-23 增加返回字段info，客户的备注信息
 - 08-22 增加返回字段step_title，以及设计师的进度字段
@@ -28,6 +28,7 @@
                 'level': 1, // 订单等级，1，2，3，4，5，6
                 'free': true, // 免费订单，false为付费订单
                 'budget': 1, // 设计预算
+                'decoration_budget': 1, // 装修预算
                 'unit': '', // 户型 "n室n厅n厨n卫n阳台"
                 'area': 1, // 面积
                 'style': '', // 风格
