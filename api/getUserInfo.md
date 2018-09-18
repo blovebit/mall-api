@@ -1,6 +1,7 @@
 # 获取用户信息: getUserInfo
 
-- 0908 如果是公司，新增返回 staff_applicant 新员工入职申请数量
+- 09-18 如果是设计师，新增返回 订单统计数据 task_statistics
+- 09-08 如果是公司，新增返回 staff_applicant 新员工入职申请数量
 
 ## 参数
 
@@ -36,6 +37,11 @@ if --- 如果设计师
 
             "fans": int, // 粉丝数
             "new_task": int, // 有新的预约，等待接单或拒单操作，的订单数目。此时不要更新订单的查看状态，操作之后才更新
+            "task_statistics": { // 订单统计数据
+                "on_going": int, // 进行中
+                "end": int, // 已完结
+                "cancel": int, // 已取消
+            },
 
 endif ----------
 
