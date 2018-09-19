@@ -1,7 +1,7 @@
 # 益装网api需求
 
 目录条目前的数字表示最后更改的日期，若无，表示至初稿后还未更新  
-**避免浪费效率，建议先实现更新过的文档，没更新过的文档大都不完整或有缺陷**   
+**避免浪费效率，建议先实现更新过的文档，没更新过的文档大都不完整或有缺陷**
 8月30号沟通后，日期统一更改为8-30
 
 ## 页面展示类
@@ -10,11 +10,15 @@
 
 - 获取获取订单信息
 
-  - 08-30 [任务大厅获取订单列表](./api/getTaskList.md): getTaskList
+  - 09-18 [任务大厅获取订单列表](./api/getTaskList.md): getTaskList
   - 08-30 [获取我的订单列表](./api/getMyTaskList.md): getMyTaskList
-  - 08-30 [获取订单信息](./api/getTaskProfile.md): getTaskProfile  
+  - 09-07 [获取订单信息](./api/getTaskProfile.md): getTaskProfile
   - 08-30 [获取公司订单列表](./api/getCompanyMyTaskList.md): getCompanyMyTaskList
   - 08-30 [获取订单进度与设计](./api/getTaskProcess.md): getTaskProcess
+  - 09-07 [获取各进度的设计详情](./api/getTaskDetail.md): getTaskDetail  
+    这两个接口分别从不同维度查询订单设计详情，  
+    前者以 **设计师** 为查询条件，查询该订单该设计师的 各个进度的稿件详情  
+    后者以 **进度** 为查询雕件，查询该订单该进度的 各个设计师的稿件详情
   - 08-30 [获取评价选项](./api/getReviewOption.md): getReviewOption
   - [获取设计师未开始订单列表](./api/noStartTask.md): getNoStartTask
   <!-- - [设计师获取订单进度详情](./api/getDesignerTaskProcess.md): getDesignerTaskProcess -->
@@ -27,10 +31,10 @@
   - 08-30 [获取公司简要信息](./api/getCompanyProfile.md): getCompanyProfile  
   - 08-30 [获取公司资料信息](./api/getCompanyDetail.md): getCompanyDetail
   - 08-30 [公司名模糊查询](./api/getCompanyName.md): getCompanyName
-  - 08-30 [查看员工列表](./api/getStaffList.md): getStaffList
+  - 09-13 [查看员工列表](./api/getStaffList.md): getStaffList
   - 08-30 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
   - 08-30 [获取员工详情](./api/getStaffDetail.md): getStaffDetail
-  - 08-30 [获取用户信息](./api/getUserInfo.md): getUserInfo
+  - 09-18 [获取用户信息](./api/getUserInfo.md): getUserInfo
   <!-- - [查看工地列表](./api/getCompanyProjectList.md): getCompanyProjectList -->
   - 08-30 [获取在建工地列表](./api/getWorkingProjectList.md): getWorkingProjectList
   - 08-30 [获取案例列表](./api/getCaseList.md): getCaseList
@@ -70,7 +74,7 @@
 
 - 公司管理操作
 
-  - [公司管理员工状态](./api/manageStaff.md): manageStaff
+  - 09-13 [公司管理员工状态](./api/manageStaff.md): manageStaff
   - [员工离职申请](./api/laborTurnover.md): laborTurnover
   - [公司审核员工离职申请](./api/auditLaborTurnover.md): auditLaborTurnover
   - [设计师发起公司变更操作](./api/changeMyCompany.md): changeMyCompany
