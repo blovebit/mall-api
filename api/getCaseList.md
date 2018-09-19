@@ -1,6 +1,6 @@
 # （平台/公司/设计师）获取案例列表: getCaseList
 
-- 09-19 返回数据 增加room_list
+- 09-19 返回数据 增加room_list，audit
 - 08-17 增加字段："house_type"(跃层"||"平层"||"别墅)、"name"工地名
 
 ## 参数
@@ -45,18 +45,19 @@
                 "designer": { // 设计师
                     "id": "", //
                     "name": "", //
-                    "avatar": {// 头像路径 
+                    "avatar": { // 头像路径 
                         "ori":"", // 原图
                         "big": "", // 大图PC
                         "mid": "", // 中途wap
                         "sml": "", // 小图
                     },
                 },
-                "image_num": int ,//图片张数,
+                "image_num": int , // 图片张数,
 
-09-19 增加room_list
+09-19 增加room_list，audit
 
-                "room_list|8": [ // 房间列表
+                "audit": 1, // 审核状态,0待审核，1通过，2不通过
+                "room_list": [ // 房间列表
                     {
                         "name": "", // 房间名称 客厅，餐厅，卧室2、儿童房、玄关、书房、厨房，卫生间，阳台等
                         "explain": "@cparagraph", // 说明
