@@ -37,7 +37,7 @@
   - 09-18 [获取用户信息](./api/getUserInfo.md): getUserInfo
   <!-- - [查看工地列表](./api/getCompanyProjectList.md): getCompanyProjectList -->
   - 08-30 [获取在建工地列表](./api/getWorkingProjectList.md): getWorkingProjectList
-  - 08-30 [获取案例列表](./api/getCaseList.md): getCaseList
+  - 09-19 [获取案例列表](./api/getCaseList.md): getCaseList
   - 08-30 [获取案例详情](./api/getCaseDetail.md): getCaseDetail
   - 08-30 [获取活动列表](./api/getPromotionList.md): getPromotionList
   - 08-30 [获取活动详情](./api/getPromotionDetail.md): getPromotionDetail
