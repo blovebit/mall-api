@@ -135,10 +135,10 @@
                                     {
                                         "name": "", // 局部名，电视墙，浴室柜等(房间的局部)
                                         "photo": {  // 图片
-                                            "ori": "https://source.unsplash.com/random/800x420?@natural(0,5)", // 大图PC
-                                            "big": "https://source.unsplash.com/random/375x150?@natural(0,5)", // 中途wap
-                                            "mid": "https://source.unsplash.com/random/375x150?@natural(0,5)", // 中途wap
-                                            "sml": "https://source.unsplash.com/random/375x150?@natural(0,5)", // 中途wap
+                                            "ori": "",
+                                            "big": "",
+                                            "mid": "",
+                                            "sml": "",
                                         }
                                     },
                                     // ..
@@ -173,7 +173,7 @@
 
                 {
                     "step_id": 11,
-                    "step_title": "上传施工图凭证",
+                    "step_title": "审核尾款支付凭证",
                     "step_discript": "",
 
 > 额外返回上一步 **上传支付凭证** 的操作数据
