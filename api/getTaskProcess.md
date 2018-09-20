@@ -1,9 +1,8 @@
 # 获取订单进度与设计: getTaskProcess
 
 - 以 设计师 和 订单 为查询条件，查询 **设计师与订单的关联表**  
-  返回 订单的3d链接，当前订单最新步骤id  
-  所有步骤配置及该订单 **施工图交付凭证、尾款支付凭证、终稿、定金支付凭证、初稿** 5个步骤的详细信息  
-  其余返回步骤id，名称以及对应描述
+  返回 订单的 **进度信息** 及 **施工图交付凭证、尾款支付凭证、终稿、定金支付凭证、初稿** 的操作数据
+- 09-20 返回数据做了详细的说明和示例
 
 ## 参数
 
@@ -17,104 +16,201 @@
     {
         "process": {
             "vr_url": "", // 3d案例的链接
-            "step_id": 1, // 订单当前步骤id，设计师与订单的关联表
-            'step_list':[ // 具体多少步骤从步骤配置表获取，获取全部步骤列表
+            "step_id": 1, // 当前步骤id，设计师与订单的关联表
+
+以下数据 step_list 为拉取的 订单所有步骤 的列表，具体多少步骤 从步骤配置表获取  
+在其中一些步骤，需要额外返回上一步骤的 操作数据（初稿数据，终稿数据等）
+
+            'step_list':[
+
+步骤0 - 发布
+
                 {
-                    "step_id": , // 步骤id
-                    "step_title": "", // 当前步骤标题
+                    "step_id": 0, // 步骤id
+                    "step_title": "发布", // 当前步骤标题
                     "step_discript": "", // 当前步骤描述
-                }
-                //......补齐缺失步骤
-
-               { // 步骤-初稿上传，
-                   "step_id": , // 步骤id,
-                   "step_title": "", // 当前步骤标题
-                   "step_discript": "", // 当前步骤描述
-                   "process_id": 1, // 进度id
-                   "photo":{ // 初稿图片
-                       "ori": "", // 大图PC
-                       "big": "", // 大图PC
-                       "mid": "", // 中图wap
-                       "sml": "", // 中图wap
-                   },
-                   "explain": "", // 设计说明
-                   "choose_status": 1, // 用户选择状态，0待选择，1选择，2淘汰
-                   "audit_status": 1, // 公司审核状态，0待审核，1通过，2不通过
-                   "time": 11354546489, // 上传时间
-               }
-                //.....补齐缺失步骤
-
-                { // 步骤-定金支付凭证
-                    "step_id": 1, // 步骤id
-                    "step_title": "", // 当前步骤标题
-                    "step_discript": "", // 当前步骤描述
-                    "photo":{ // 凭证图片
-                        "ori": "", // 大图PC
-                        "big": "", // 大图PC
-                        "mid": "", // 中图wap
-                        "sml": "", // 中图wap
-                    },
-                    "amount": 1, // 金额
-                    "time": 11354546489, // 上传时间
                 },
-                //.....补齐缺失步骤
 
-                { // 步骤-终稿上传
-                    "step_id": 1, // 步骤id,
-                    "step_title": "", // 当前步骤标题
-                    "step_discript": "", // 当前步骤描述
-                    "process_id": 1, // 进度id
-                    "room_list|8": [ // 房间列表
-                        {
-                            "name": "", // 房间名称 客厅，餐厅，卧室2、儿童房、玄关、书房、厨房，卫生间，阳台等
-                            "explain": "", // 说明
-                            "photo": { // 图片
-                                "ori": "", // 大图PC
-                                "big": "", // 大图PC
-                                "mid": "", // 中图wap
-                                "sml": "", // 中图wap
+步骤1 - 抢单
+
+                {
+                    "step_id": 1,
+                    "step_title": "抢单",
+                    "step_discript": "",
+                },
+
+步骤2 - 上传初稿
+
+                {
+                    "step_id": 2,
+                    "step_title": "上传初稿",
+                    "step_discript": "",
+                },
+
+步骤3 - (公司)审核初稿
+
+                {
+                    "step_id": 3,
+                    "step_title": "",
+                    "step_discript": "",
+
+> 额外返回上一步 **初稿** 的操作数据
+
+                    "first_draft": {
+                        "process_id": 1, // 进度id
+                        "photo":{ // 初稿图片
+                            "ori": "", // 大图PC
+                            "big": "", // 大图PC
+                            "mid": "", // 中图wap
+                            "sml": "", // 中图wap
+                        },
+                        "explain": "", // 设计说明
+                        "choose_status": 1, // 用户选择状态，0待选择，1选择，2淘汰
+                        "audit_status": 1, // 公司审核状态，0待审核，1通过，2不通过
+                        "time": 11354546489, // 上传时间
+                    }
+                },
+
+步骤4 - (用户)选初稿
+
+                {
+                    "step_id": 4,
+                    "step_title": "选初稿",
+                    "step_discript": "",
+                },
+
+步骤5 - 支付定金（上传支付凭证）
+
+                {
+                    "step_id": 5,
+                    "step_title": "支付定金",
+                    "step_discript": "",
+                },
+
+步骤6 - 上传终稿
+
+                {
+                    "step_id": 6,
+                    "step_title": "上传终稿",
+                    "step_discript": "",
+
+> 额外返回上一步 **支付凭证** 的操作数据
+
+                    "first_reception": {
+                        "photo":{ // 凭证图片
+                            "ori": "", // 大图PC
+                            "big": "", // 大图PC
+                            "mid": "", // 中图wap
+                            "sml": "", // 中图wap
+                        },
+                        "amount": 1, // 金额
+                        "time": 11354546489, // 上传时间
+                    }
+                },
+
+步骤7 - (公司)审核终稿
+
+                {
+                    "step_id": 7,,
+                    "step_title": "审核终稿",
+                    "step_discript": "",
+
+> 额外返回上一步 **终稿** 的操作数据
+
+                    "final_draft": {
+                        "process_id": 1, // 进度id
+                        "room_list|8": [ // 房间列表
+                            {
+                                "name": "", // 房间名称 客厅，餐厅，卧室2、儿童房、玄关、书房、厨房，卫生间，阳台等
+                                "explain": "", // 说明
+                                "part": [ // 局部
+                                    {
+                                        "name": "", // 局部名，电视墙，浴室柜等(房间的局部)
+                                        "photo": {  // 图片
+                                            "ori": "https://source.unsplash.com/random/800x420?@natural(0,5)", // 大图PC
+                                            "big": "https://source.unsplash.com/random/375x150?@natural(0,5)", // 中途wap
+                                            "mid": "https://source.unsplash.com/random/375x150?@natural(0,5)", // 中途wap
+                                            "sml": "https://source.unsplash.com/random/375x150?@natural(0,5)", // 中途wap
+                                        }
+                                    },
+                                    // ..
+                                ],
                             }
-                        }
-                        // ...
-                    ],
-                    "explain": "", // 设计说明
-                    "choose_status": 1, // 用户选择状态，0待选择，1选择，2淘汰
-                    "audit_status": 1, // 公司审核状态，0待审核，1通过，2不通过
-                    "time": 11354546489, // 上传时间
+                            // ...
+                        ],
+                        "explain": "", // 设计说明
+                        "choose_status": 1, // 用户选择状态，0待选择，1选择，2淘汰
+                        "audit_status": 1, // 公司审核状态，0待审核，1通过，2不通过
+                        "time": 11354546489, // 上传时间
+                    }
                 },
-                //......补齐缺失步骤
 
-                { // 步骤-尾款支付凭证
-                    "step_id": 1, // 步骤id
-                    "step_title": "", // 当前步骤标题
-                    "step_discript": "", // 当前步骤描述
-                    "photo":{ // 凭证图片
-                        "ori": "", // 大图PC
-                        "big": "", // 大图PC
-                        "mid": "", // 中图wap
-                        "sml": "", // 中图wap
-                    },
-                    "amount": 1, // 金额
-                    "time": 11354546489, // 上传时间
-                },
-                //.......补齐缺失步骤
+步骤8 - (用户)审核终稿
 
-                { // 步骤-施工图交付凭证
-                    "step_id": 1, // 步骤id
-                    "step_title": "", // 当前步骤标题
-                    "step_discript": "", // 当前步骤描述
-                    "photo":{ // 凭证图片
-                        "ori": "", // 大图PC
-                        "big": "", // 大图PC
-                        "mid": "", // 中图wap
-                        "sml": "", // 中图wap
-                    },
-                    "audit_status": 1, // 公司审核状态，0待审核，1通过，2不通过
-                    "time": 11354546489, // 上传时间
+                {
+                    "step_id": 8,
+                    "step_title": "选择终稿",
+                    "step_discript": "",
                 },
-                //.....补齐缺失步骤
+
+步骤9 - 支付尾款(上传支付凭证)
+
+                {
+                    "step_id": 9,
+                    "step_title": "支付尾款",
+                    "step_discript": "",
+                },
+
+步骤10 - 交付施工图给用户（上传交付凭证供平台审核）
+
+                {
+                    "step_id": 10,
+                    "step_title": "上传施工图凭证",
+                    "step_discript": "",
+
+> 额外返回上一步 **上传支付凭证** 的操作数据
+
+                    "final_reception": {
+                        "photo":{ // 凭证图片
+                            "ori": "", // 大图PC
+                            "big": "", // 大图PC
+                            "mid": "", // 中图wap
+                            "sml": "", // 中图wap
+                        },
+                        "amount": 1, // 金额
+                        "time": 11354546489, // 上传时间
+                    }
+                },
+
+步骤11 - (平台)审核(施工图)交付凭证
+
+                {
+                    "step_id": 11,
+                    "step_title": "审核交付凭证",
+                    "step_discript": "",
+
+> 额外返回上一步 **施工图交付凭证** 的操作数据
+
+                    "cad_reception": {
+                        "photo":{ // 凭证图片
+                            "ori": "", // 大图PC
+                            "big": "", // 大图PC
+                            "mid": "", // 中图wap
+                            "sml": "", // 中图wap
+                        },
+                        "audit_status": 1, // 公司审核状态，0待审核，1通过，2不通过
+                        "time": 11354546489, // 上传时间
+                    }
+                },
+
+步骤12 - 完结
+
+                {
+                    "step_id": 12,
+                    "step_title": "完结",
+                    "step_discript": "",
+                },
             ]
-
         },
         "message": "获取数据成功!",
         "status": 200
