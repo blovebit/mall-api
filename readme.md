@@ -15,7 +15,7 @@
   - 09-07 [获取订单信息](./api/getTaskProfile.md): getTaskProfile
   - 08-30 [获取公司订单列表](./api/getCompanyMyTaskList.md): getCompanyMyTaskList
   - 09-20 [获取订单进度与设计](./api/getTaskProcess.md): getTaskProcess
-  - 09-07 [获取各进度的设计详情](./api/getTaskDetail.md): getTaskDetail  
+  - 09-21 [获取各进度的设计详情](./api/getTaskDetail.md): getTaskDetail  
     这两个接口分别从不同维度查询订单设计详情，  
     前者以 **设计师** 为查询条件，查询该订单该设计师的 各个进度的稿件详情  
     后者以 **进度** 为查询雕件，查询该订单该进度的 各个设计师的稿件详情
