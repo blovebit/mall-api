@@ -32,7 +32,7 @@
   - 08-30 [获取公司资料信息](./api/getCompanyDetail.md): getCompanyDetail
   - 08-30 [公司名模糊查询](./api/getCompanyName.md): getCompanyName
   - 09-13 [查看员工列表](./api/getStaffList.md): getStaffList
-  - 08-30 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
+  - 09-26 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
   - 08-30 [获取员工详情](./api/getStaffDetail.md): getStaffDetail
   - 09-18 [获取用户信息](./api/getUserInfo.md): getUserInfo
   <!-- - [查看工地列表](./api/getCompanyProjectList.md): getCompanyProjectList -->
