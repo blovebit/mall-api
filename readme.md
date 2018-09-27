@@ -12,7 +12,7 @@
 
   - 09-26 [任务大厅获取订单列表](./api/getTaskList.md): getTaskList
   - 08-30 [获取我的订单列表](./api/getMyTaskList.md): getMyTaskList
-  - 09-07 [获取订单信息](./api/getTaskProfile.md): getTaskProfile
+  - 09-26 [获取订单信息](./api/getTaskProfile.md): getTaskProfile
   - 08-30 [获取公司订单列表](./api/getCompanyMyTaskList.md): getCompanyMyTaskList
   - 09-21 [获取订单进度与设计](./api/getTaskProcess.md): getTaskProcess
   - 09-21 [获取各进度的设计详情](./api/getTaskDetail.md): getTaskDetail  
