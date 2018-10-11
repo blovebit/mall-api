@@ -1,6 +1,6 @@
 # （平台首页）推荐设计师列表: getIndexDesignerList
 
-- 09-26 新增返回 role_name
+- 09-26 新增返回 level_name
 
 ## 参数
 
@@ -20,7 +20,7 @@
                 "id": int, // 设计师id
                 "name": "", // 设计师名字
                 "level": int, // 设计师等级
-                "role_name": "首席设计师", // 角色名：首席设计师等，需要查积分表配置表
+                "level_name": "首席设计师", // 等级称谓：首席设计师等，设计师等级表获取
                 "work_years": int, // 从业年限
                 "concept": "", // 设计师理念
                 "avatar": { // 头像路径
