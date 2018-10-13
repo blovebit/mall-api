@@ -10,12 +10,12 @@
 
 - 获取获取订单信息
 
-  - 09-18 [任务大厅获取订单列表](./api/getTaskList.md): getTaskList
+  - 09-26 [任务大厅获取订单列表](./api/getTaskList.md): getTaskList
   - 08-30 [获取我的订单列表](./api/getMyTaskList.md): getMyTaskList
-  - 09-07 [获取订单信息](./api/getTaskProfile.md): getTaskProfile
+  - 09-26 [获取订单信息](./api/getTaskProfile.md): getTaskProfile
   - 08-30 [获取公司订单列表](./api/getCompanyMyTaskList.md): getCompanyMyTaskList
-  - 09-20 [获取订单进度与设计](./api/getTaskProcess.md): getTaskProcess
-  - 09-07 [获取各进度的设计详情](./api/getTaskDetail.md): getTaskDetail  
+  - 09-21 [获取订单进度与设计](./api/getTaskProcess.md): getTaskProcess
+  - 09-21 [获取各进度的设计详情](./api/getTaskDetail.md): getTaskDetail  
     这两个接口分别从不同维度查询订单设计详情，  
     前者以 **设计师** 为查询条件，查询该订单该设计师的 各个进度的稿件详情  
     后者以 **进度** 为查询雕件，查询该订单该进度的 各个设计师的稿件详情
@@ -32,7 +32,7 @@
   - 08-30 [获取公司资料信息](./api/getCompanyDetail.md): getCompanyDetail
   - 08-30 [公司名模糊查询](./api/getCompanyName.md): getCompanyName
   - 09-13 [查看员工列表](./api/getStaffList.md): getStaffList
-  - 08-30 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
+  - 09-26 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
   - 08-30 [获取员工详情](./api/getStaffDetail.md): getStaffDetail
   - 09-18 [获取用户信息](./api/getUserInfo.md): getUserInfo
   <!-- - [查看工地列表](./api/getCompanyProjectList.md): getCompanyProjectList -->
