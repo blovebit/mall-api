@@ -1,5 +1,11 @@
 ﻿# 接口修改文档
 
+## 10-14
+
+- /rest/v2/order/getTaskList 订单数据 [接口文档](./api/getTaskList.md)
+  - 订单没有户型图时，返回数据 layout_pic 为 null
+  - 需要配置一张默认图片，
+
 ## 10-13 接口待改进
 
 - /rest/v2/user/getUserInfo  获取用户基本信息 [接口文档](./api/getUserInfo.md)
