@@ -3,8 +3,9 @@
 ## 10-14
 
 - /rest/v2/order/getTaskList 订单数据 [接口文档](./api/getTaskList.md)
-  - 订单没有户型图时，返回数据 layout_pic 为 null
-  - 需要配置一张默认图片，
+  - 订单没有户型图时，返回数据 layout_pic 为 null, 需要配置一张默认图片
+  - 返回数据 增加订单招标总时间 total_time
+  - 订单等级默认最低等级0 改为 1
 
 ## 10-13 接口待改进
 
