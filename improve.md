@@ -1,5 +1,10 @@
 ﻿# 接口修改文档
 
+## 10-15
+
+- 工地列表 [接口文档](./api/getWorkingProjectList.md)
+  - 没有接口
+
 ## 10-14
 
 - /rest/v2/order/getTaskList 订单数据 [接口文档](./api/getTaskList.md)
@@ -9,7 +14,7 @@
 
 ## 10-13 接口待改进
 
-- /rest/v2/user/getUserInfo  获取用户基本信息 [接口文档](./api/getUserInfo.md)
+- /rest/v2/user/getUserInfo  获取用户基本信息 [接口文档](./api/getUserInfo.md) **已改**
   - 如果是公司
   - 返回数据 增加公司id
 
