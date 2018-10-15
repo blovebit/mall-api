@@ -2,6 +2,10 @@
 
 ## 10-15
 
+- /rest/v2/order/getMyTaskList 我的订单列表 [接口文档](./api/getMyTaskList.md)
+  - role_id 传2时 返回500
+  - role_id 传3时 返回400
+
 - /rest/v2/comment/getReviewOption 评价的选项 [接口文档](./api/getReviewOption.md)
   - 返回无数据
 
