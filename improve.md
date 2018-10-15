@@ -14,7 +14,7 @@
 
 ## 10-13 接口待改进
 
-- /rest/v2/user/getUserInfo  获取用户基本信息 [接口文档](./api/getUserInfo.md) **已改**
+- /rest/v2/user/getUserInfo  获取用户基本信息 [接口文档](./api/getUserInfo.md) **（核实已修改）**
   - 如果是公司
   - 返回数据 增加公司id
 
