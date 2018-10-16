@@ -2,6 +2,9 @@
 
 ## 10-16
 
+- /rest/v2/company/getStaffList 员工列表 [接口文档](./api/getStaffList.md)
+  - 公司判断 如果没有查询参数 company_id， 用 token 判断
+
 - /rest/v2/order/getTaskList 获取任务大厅列表 [接口文档](./api/getTaskList.md)
   - 查询条件 增加 是否过期（招标结束） 的字段 is_close ，查询相应的数据。
   - 返回数据 增加订单专员对订单的描述字段
