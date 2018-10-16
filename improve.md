@@ -9,6 +9,7 @@
 
 - /rest/v2/order/grabTask 抢单 [接口文档](./api/grabTask.md)
   - 抢单限制 一个公司（益装网平台除外）只允许一个设计师抢同一个单
+  - 招标结束机制 抢单人数达到了订单设置的最大数，订单招标时间自动结束，不需要等时间到了才结束
 
 - /rest/v2/company/auditLaborTurnover 员工管理
   - post数据 增加益币coin, 表示分配给公司员工改数量的益币
