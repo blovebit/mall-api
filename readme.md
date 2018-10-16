@@ -20,7 +20,7 @@
     前者以 **设计师** 为查询条件，查询该订单该设计师的 各个进度的稿件详情  
     后者以 **进度** 为查询雕件，查询该订单该进度的 各个设计师的稿件详情
   - 08-30 [获取评价选项](./api/getReviewOption.md): getReviewOption
-  - 10-13 [获取设计师未开始订单列表](./api/getNoStartTaskList.md): getgetNoStartTaskList
+  - 10-13 [获取设计师未开始订单列表](./api/getNoStartTaskList.md): getNoStartTaskList
   <!-- - [设计师获取订单进度详情](./api/getDesignerTaskProcess.md): getDesignerTaskProcess -->
   <!-- - [(用户)获取订单设计详情](./api/getTaskDraft.md): getTaskDraft -->
   <!-- - [(公司)查看订单详情](./api/getCompanyTaskDetail.md): getCompanyTaskDetail -->
@@ -34,7 +34,7 @@
   - 09-13 [查看员工列表](./api/getStaffList.md): getStaffList
   - 09-26 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
   - 08-30 [获取员工详情](./api/getStaffDetail.md): getStaffDetail
-  - 09-18 [获取用户信息](./api/getUserInfo.md): getUserInfo
+  - 10-13 [获取用户信息](./api/getUserInfo.md): getUserInfo
   <!-- - [查看工地列表](./api/getCompanyProjectList.md): getCompanyProjectList -->
   - 08-30 [获取在建工地列表](./api/getWorkingProjectList.md): getWorkingProjectList
   - 09-19 [获取案例列表](./api/getCaseList.md): getCaseList

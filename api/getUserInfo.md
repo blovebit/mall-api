@@ -1,5 +1,6 @@
 # 获取用户信息: getUserInfo
 
+- 10-13 如果是公司，新增返回 公司id company_id
 - 09-18 如果是设计师，新增返回 订单统计数据 task_statistics
 - 09-08 如果是公司，新增返回 staff_applicant 新员工入职申请数量
 
@@ -47,6 +48,7 @@ endif ----------
 
 if ---- 如果为公司
 
+            "company_id": int, // 公司ID
             "fans": int, // 粉丝数
             "staff_applicant": int, // 新员工入职申请数量
             "is_deposit": int, // 是否缴纳保证金
