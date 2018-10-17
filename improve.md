@@ -4,6 +4,7 @@
 
 - /rest/v2/order/getTaskList 订单列表 [接口文档](./api/getTaskList.md)
   - 返回数据 增加 "burning": int, // 信息费（需要消耗益币数）
+  - 返回数据 增加 信息费折扣
 
 - /rest/v2/user/getIndexDesignerList 设计师列表 [接口文档](./api/getTaskList.md)
   - 返回数据 level返回了0 最低默认 应为 1
