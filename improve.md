@@ -1,6 +1,19 @@
 ﻿# 接口修改文档
 
+## 10-17
+
+- /rest/v2/order/getTaskList 订单列表 [接口文档](./api/getTaskList.md)
+  - 返回数据 增加 "burning": int, // 信息费（需要消耗益币数）
+  - 返回数据 增加 信息费折扣
+
+- /rest/v2/user/getIndexDesignerList 设计师列表 [接口文档](./api/getTaskList.md)
+  - 返回数据 level返回了0 最低默认 应为 1
+  - 返回数据 增加 level_name 等级相应的名称 “初级设计师、资深设计师等”
+
 ## 10-16
+
+- /rest/v2/company/getStaffList 员工列表 [接口文档](./api/getStaffList.md)
+  - 公司判断 如果没有查询参数 company_id， 用 token 判断
 
 - /rest/v2/order/getTaskList 获取任务大厅列表 [接口文档](./api/getTaskList.md)
   - 查询条件 增加 是否过期（招标结束） 的字段 is_close ，查询相应的数据。
@@ -9,6 +22,7 @@
 
 - /rest/v2/order/grabTask 抢单 [接口文档](./api/grabTask.md)
   - 抢单限制 一个公司（益装网平台除外）只允许一个设计师抢同一个单
+  - 招标结束机制 抢单人数达到了订单设置的最大数，订单招标时间自动结束，不需要等时间到了才结束
 
 - /rest/v2/company/auditLaborTurnover 员工管理
   - post数据 增加益币coin, 表示分配给公司员工改数量的益币
