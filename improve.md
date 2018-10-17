@@ -1,5 +1,14 @@
 ﻿# 接口修改文档
 
+## 10-17
+
+- /rest/v2/order/getTaskList 订单列表 [接口文档](./api/getTaskList.md)
+  - 返回数据 增加 "burning": int, // 信息费（需要消耗益币数）
+
+- /rest/v2/user/getIndexDesignerList 设计师列表 [接口文档](./api/getTaskList.md)
+  - 返回数据 level返回了0 最低默认 应为 1
+  - 返回数据 增加 level_name 等级相应的名称 “初级设计师、资深设计师等”
+
 ## 10-16
 
 - /rest/v2/company/getStaffList 员工列表 [接口文档](./api/getStaffList.md)
