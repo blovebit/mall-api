@@ -23,7 +23,8 @@
                 'area': // 面积
                 'unit': // 户型
                 'style': // 风格
-                'complete_status': // 施工状态
+                "complete_status": "", // 施工状态
+                "current_step": int, // 当前施工进度（大阶段nodeid）
                 'province': // 省
                 'city': // 市
                 'region': // 区
