@@ -36,8 +36,8 @@
   - 09-26 [首页推荐设计师列表](./api/getIndexDesignerList.md): getIndexDesignerList
   - 08-30 [获取员工详情](./api/getStaffDetail.md): getStaffDetail
   - 10-13 [获取用户信息](./api/getUserInfo.md): getUserInfo
-  <!-- - [查看工地列表](./api/getCompanyProjectList.md): getCompanyProjectList -->
-  - 08-30 [获取在建工地列表](./api/getWorkingProjectList.md): getWorkingProjectList
+  - 10-19 [查看个人中心工地列表](./api/getCompanyProjectList.md): getCompanyProjectList
+  - 10-19 [获取前端在建工地列表](./api/getWorkingProjectList.md): getWorkingProjectList
   - 09-19 [获取案例列表](./api/getCaseList.md): getCaseList
   - 09-19 [获取案例详情](./api/getCaseDetail.md): getCaseDetail
   - 08-30 [获取活动列表](./api/getPromotionList.md): getPromotionList

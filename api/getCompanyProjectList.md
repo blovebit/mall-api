@@ -1,5 +1,7 @@
 # （公  司）查看工地列表: getCompanyProjectList
 
+- 10-19 增加一个阶段id字段
+
 ## 参数
 
     {
