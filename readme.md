@@ -21,6 +21,7 @@
     后者以 **进度** 为查询雕件，查询该订单该进度的 各个设计师的稿件详情
   - 08-30 [获取评价选项](./api/getReviewOption.md): getReviewOption
   - 10-13 [获取设计师未开始订单列表](./api/getNoStartTaskList.md): getNoStartTaskList
+  - 10-19 [获取设计师订单的酷家乐设计](./api/getKjlDesign.md): getKjlDesign
   <!-- - [设计师获取订单进度详情](./api/getDesignerTaskProcess.md): getDesignerTaskProcess -->
   <!-- - [(用户)获取订单设计详情](./api/getTaskDraft.md): getTaskDraft -->
   <!-- - [(公司)查看订单详情](./api/getCompanyTaskDetail.md): getCompanyTaskDetail -->
