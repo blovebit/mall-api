@@ -22,6 +22,7 @@
                 "roleSign": ""
             },
             "level": int, // 用户等级，1，2，3，4，5，6
+            "level_name": int, // 用户等级名称
             "avatar": "", // 头像路径 120px左右那个图
             "coin": {// 益币相关
                 "total": int, // 益币数量
