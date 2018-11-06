@@ -37,6 +37,11 @@
             "step_id": 1, // 当前步骤id，订单表
             "step_title": "", // 当前步骤标题
             "step_discript": "", // 当前步骤描述
+            "deposit":""   //定金金额
+            "is_deposit":""   //定金支付状态
+             "retainage":""   //尾款金额
+            "is_retainage":""   //尾款支付状态
+            "is_quota":""   //设计费是否定额
             "layout_pic": { // 户型图路径
                 "ori": "", // 原
                 "big": "", // 大

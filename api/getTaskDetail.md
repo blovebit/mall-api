@@ -23,8 +23,11 @@
                 "designer": { // 设计师
                     "id": 1, // 设计师id
                     "name": "", // 设计师名
+                    "sharge": "", // 设计师收费标准
                 },
                 "process_id": 1, // 进度id
+                "practical_area": , // 设计实际面积
+                "practical_style": , // 设计实际风格
                 "explain": "", // 设计说明
                 "choose_status": 1, // 用户选择状态，0待选择，1选择，2淘汰
                 "audit_status": 1, // 公司审核状态，0待审核，1通过，2不通过

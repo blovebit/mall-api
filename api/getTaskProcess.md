@@ -153,7 +153,6 @@
                         "practical_area": //户型实际面积
                         "practical_style": //设计实际风格
                         "charge": //设计师的收费标准
-                        "design_budget": //客户的设计预算（如果师定额设计）
                         "is_quota": //是否定额设计标记
                         "choose_status": 1, // 用户选择状态，0待选择，1选择，2淘汰
                         "audit_status": 1, // 公司审核状态，0待审核，1通过，2不通过
