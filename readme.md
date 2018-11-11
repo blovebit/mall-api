@@ -61,6 +61,7 @@
   - [设计师拒单操作](./api/rejectTask.md): rejectTask
   - [设计师上传原创案例操作](./api/createCase.md): createCase
   - [设计师订单关联酷家乐案例id操作](./api/createTaskRelationKjl.md): createTaskRelationKjl
+  - (11-11)[平台变更用户积分操作](./api/updateUserIntegral.md): updateUserIntegral
 
 
 - 订单操作相关
@@ -72,6 +73,7 @@
   - 08-30 [用户选择设计方案](./api/chooseTaskDraft.md): chooseTaskDraft
   - [(用户)评价](./api/commentTask.md): commentTask
   - [(公司)审核设计师的设计](./api/reviewDraft.md): reviewDraft
+  - (11-11)[设计师删除案例操作](./api/updateUserIntegral.md): updateUserIntegral
 
 - 公司管理操作
 
