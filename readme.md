@@ -73,7 +73,7 @@
   - 08-30 [用户选择设计方案](./api/chooseTaskDraft.md): chooseTaskDraft
   - [(用户)评价](./api/commentTask.md): commentTask
   - [(公司)审核设计师的设计](./api/reviewDraft.md): reviewDraft
-  - (11-11)[设计师删除案例操作](./api/updateUserIntegral.md): updateUserIntegral
+  - (11-11)[设计师删除案例操作](./api/designerDeleteCase.md): designerDeleteCase
 
 - 公司管理操作
 
