@@ -29,6 +29,23 @@
                      "mid": "", // 中途wap
                      "sml": "", // 小图
                  }, 
+                 "caseList"[
+                     {
+                        "caseId":   //案例id
+                        "processId":   //进度id
+                        "title":   //案例名称
+                        "village":   //小区名称
+                        "style":   //风格名称
+                        "cost":   //案例造价
+                        "server":   //服务类型家装，工装等
+                        "cover":   {
+                             "ori":"", //原图
+                             "big": "", // 大图PC
+                             "mid": "", // 中途wap
+                             "sml": "", // 小图
+                        }
+                     }
+                 ]
                 "case_num": int,// 案例数
                 "like_num": int,// 喜欢数
             },
